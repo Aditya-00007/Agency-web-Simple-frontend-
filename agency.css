@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 41, 41);
+    overflow: hidden;
+}
+
+.pt1{
+    flex: 1;
+    top: 0;
+    position: sticky;
+    background-color: black;
+    width: 100%;
+}
+.pt1 >p{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ead303;
+    text-align: center;
+    line-height: 250%;
+}
+.pt2{
+    flex: 2;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 600%;
+    padding-left: 2%;
+}
+.pt3{
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pt3 img{
+    height: 250px;
+    width: 400px;
+    display: inline-block;
+}
+.im1,.im2{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 0 1% 0 2% ;
+    color: white;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 3%;
+}
+.cont h4{
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5%;
+}
+.pt4{
+    flex: 0.7;
+    background-color: rgb(11, 1, 46);
+    color: blanchedalmond;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;   
+    align-items: center;       
+    padding: 10px 55px;
+}
+.pt4 p{
+    position: static;          
+    margin: 0; 
+}
+
+@media (max-width:420px) {
+.body{
+    justify-content: flex-start;
+   overflow-y: auto;
+   min-height: 100vh;
+}
+
+    .pt1 >p{
+    font-size: 20px;
+}
+.pt2{
+    font-size: 12.4px;
+    padding-left: 2%;
+    height: 150px;
+    line-height: 37px;
+}
+.pt3{
+    flex-direction: column;
+}
+.pt3 img{
+    height: 170px;
+    width: 300px;
+}
+.im1,.im2{
+    width: 100%;
+    flex-direction:column;
+    margin: 2% 2% 2% 2% ;
+    color: white;
+}
+.cont{
+    flex-direction: column;
+    padding: 3% 3% 8% 5%;
+}
+.cont h4{
+    font-size: 20px;
+    padding-top: 3%;
+}
+.pt4{
+    justify-content:center;
+}
+}
